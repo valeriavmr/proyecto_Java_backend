@@ -1,18 +1,31 @@
-## Getting Started
+## Proyecto de CRUD java backend
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+## Funcionalidades
+- Ingreso de artículos
+- Listado de los artículos existentes
+- Consultar un artículo por código
+- Modificación de los campos de un artículo
+- Eliminar un artículo por código
 
-## Folder Structure
+## Validaciones
+- El valor ingresado no está vacío
+- En caso de números, se verifica que sea un valor válido
+- En caso de los textos, que no esté vacío o con solo espacios
+- El código de artículo y de categoría deben ser únicos
 
-The workspace contains two folders by default, where:
+## Estructura del proyecto:
+herencia_polimorfismo_tostring
+│
+└── src
+│
+└── com.techlab.articulo
+│
+├── App.java
+│
+└── model
+├── Articulo.java
+├── ArticuloElectronico.java
+├── ArticuloAlimenticio.java
+└── Categoria.java
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
-
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+Author: Valeria Moreno
